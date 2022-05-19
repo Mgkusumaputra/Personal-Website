@@ -41,7 +41,7 @@
     </head>
     <body class="bg-white text-black">
         <!-- Navbar Start -->
-        <nav class="bg-black px-11 py-5">
+        <nav class="fixed w-full overflow-y-hidden bg-black top-0 px-11 py-5">
             <div class="container flex flex-wrap justify-between items-center mx-auto">
                 <!-- Website Logo -->
                 <a href="#" class="flex items-center">
@@ -81,7 +81,7 @@
                         <li>
                             <a
                                 href="#"
-                                class="block py-2 pr-4 pl-3 text-white bg-primary-500 hover:text-primary-400 rounded md:bg-transparent md:text-primary-500 md:p-0"
+                                class="block py-2 pr-4 pl-3 text-white bg-primary-500 hover:text-primary-400 rounded md:bg-transparent md:hover:text-primary-500 md:p-0"
                                 aria-current="page"
                                 >Home</a
                             >
@@ -114,7 +114,7 @@
         <!-- End Nav -->
 
         <!-- Content Header Start -->
-        <div class="max-h-screen mt-20 px-8 md:flex md:justify-between md:max-w-5/6 xl:mt-40 xl:px-48" id="home">
+        <div class="max-h-screen mt-20 pt-20 px-8 md:flex md:justify-between md:max-w-5/6 xl:mt-40 xl:px-48" id="home">
             <div class="h-right-side md:self-center">
                 <h1 class="font-semibold text-2xl">Muhammad <span class="text-primary-500">Garuda</span> Kusuma P</h1>
                 <p class="mt-2.5 font-medium text-base w-72">
@@ -130,13 +130,12 @@
         </div>
         <!-- End Content Header -->
 
-        <hr class="border-gray-100 mt-24 mx-10 border-2 rounded-md md:mx-20" />
+        <hr class="mt-24 mx-10 border-2 rounded-md md:mx-20" id="skills"/>
 
         <!-- Skills Section Start -->
-        <div class="mt-9 mb-16" id="skills">
+        <div class="mt-9 mb-16 pt-16 md:pt-54" >
             <img class="mx-auto mb-16" src="/public/img/Title Skills.png" alt="" />
             <div class="card-skills grid gap-3 row-gap-10 sm:grid-cols-2 lg:grid-cols-3 mx-7 md:mx-40">
-
                 <div class="border border-gray-200 bg-white p-6 rounded-2xl font-semibold">
                     <div class="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-indigo-50">
                         <img src="/public/Front-End Card.svg" alt="" />
@@ -207,6 +206,76 @@
         </div>
         <!-- End Skills Section -->
 
+        <!-- Portfolio Section Start -->
+        <div class="bg-black text-white h-full px-10 py-16 md:px-40" id="portfolio">
+            <img class="mx-auto mb-24 mt-6" src="/public/img/Title Portfolio.png" alt="" />
+            <div class="card-portfolio grid gap-3 row-gap-10 sm:grid-cols-2 lg:grid-cols-3 text-black">
+                <a
+                    href="https://github.com/Mgkusumaputra/Social-Media-Link"
+                    class="flex flex-col bg-white rounded-2xl border shadow-md hover:bg-primary-400 hover:z-30 group relative transition-all duration-500 z-0"
+                >
+                    <img
+                        class="object-cover w-full rounded-2xl md:h-auto bg-cover bg-center group-hover:scale-125 transition-all duration-500"
+                        src="https://cdn.discordapp.com/attachments/771005768363147274/976812681707270164/unknown.png"
+                        alt=""
+                    />
+                    <div class="flex flex-col justify-between p-4 leading-normal">
+                        <h5 class="mb-2 text-2xl font-bold tracking-tight">
+                            Social Media Link Template
+                        </h5>
+                    </div>
+                </a>
+
+                <a
+                    href="https://github.com/Mgkusumaputra/Social-Media-Link"
+                    class="flex flex-col bg-white rounded-2xl border shadow-md hover:bg-primary-400 hover:z-30 group relative transition-all duration-500 z-0"
+                >
+                    <img
+                        class="object-cover w-full rounded-2xl md:h-auto bg-cover bg-center group-hover:scale-125 transition-all duration-500"
+                        src="https://cdn.discordapp.com/attachments/771005768363147274/976812681707270164/unknown.png"
+                        alt=""
+                    />
+                    <div class="flex flex-col justify-between p-4 leading-normal">
+                        <h5 class="mb-2 text-2xl font-bold tracking-tight">
+                            Social Media Link Template
+                        </h5>
+                    </div>
+                </a>
+
+                <a
+                    href="https://github.com/Mgkusumaputra/Social-Media-Link"
+                    class="flex flex-col bg-white rounded-2xl border shadow-md hover:bg-primary-400 hover:z-30 group relative transition-all duration-500 z-0"
+                >
+                    <img
+                        class="object-cover w-full rounded-2xl md:h-auto bg-cover bg-center group-hover:scale-125 transition-all duration-500"
+                        src="https://cdn.discordapp.com/attachments/771005768363147274/976812681707270164/unknown.png"
+                        alt=""
+                    />
+                    <div class="flex flex-col justify-between p-4 leading-normal">
+                        <h5 class="mb-2 text-2xl font-bold tracking-tight">
+                            Social Media Link Template
+                        </h5>
+                    </div>
+                </a>
+
+                <a
+                    href="https://github.com/Mgkusumaputra/Social-Media-Link"
+                    class="flex flex-col bg-white rounded-2xl border shadow-md hover:bg-primary-400 hover:z-30 group relative transition-all duration-500 z-0"
+                >
+                    <img
+                        class="object-cover w-full rounded-2xl md:h-auto bg-cover bg-center group-hover:scale-125 transition-all duration-500"
+                        src="https://cdn.discordapp.com/attachments/771005768363147274/976812681707270164/unknown.png"
+                        alt=""
+                    />
+                    <div class="flex flex-col justify-between p-4 leading-normal">
+                        <h5 class="mb-2 text-2xl font-bold tracking-tight">
+                            Social Media Link Template
+                        </h5>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!-- End Portfolio Section -->
         <script>
             const btn = document.querySelector("button.mobile-menu-button");
             const menu = document.querySelector("#mobile-menu");
